@@ -23,7 +23,7 @@ app.use(
 );
 
 app.get("/" ,(req,res)=>{
-  res.redirect("/login");
+  res.json({data:"hello"});
 })
 //Create Account
 app.post("/create-account",async(req,res)=>{
